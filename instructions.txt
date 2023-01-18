@@ -1,8 +1,8 @@
 #To 59 version + reset
+
 wget -q -O ironfish.sh https://api.nodes.guru/ironfish.sh && chmod +x ironfish.sh && sudo /bin/bash ironfish.sh && unalias ironfish 2>/dev/null
 
 ironfish reset --confirm
-ironfish config:set TransactionExpirationSequenceDelta 30
 
 nano /etc/crontab
 
