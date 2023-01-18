@@ -1,7 +1,11 @@
 #MINT
 */3 * * * * root ironfish wallet:mint -a 100000 -f $IRONFISH_WALLET -m $IRONFISH_WALLET -n $IRONFISH_WALLET -o 1
 
-#
+#BURN
+ironfish wallet:burn -a 500 -f default -o 0.1337 -i asset_id
+
+#SEND
+ironfish wallet:send -a "кол-во" -f "имя твоего кошелька" -i "asset ID" -t "dfc2679369551e64e3950e06a88e68466e813c63b100283520045925adbe59ca"
 
 
 
