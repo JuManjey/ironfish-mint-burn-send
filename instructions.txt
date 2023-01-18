@@ -3,13 +3,18 @@
 wget -q -O ironfish.sh https://api.nodes.guru/ironfish.sh && chmod +x ironfish.sh && sudo /bin/bash ironfish.sh && unalias ironfish 2>/dev/null
 
 ironfish reset --confirm
+ironfish wallet:import $HOME/.ironfish/keys/$IRONFISH_WALLET.json
+systemctl restart ironfishd ironfishd-miner.service
 
+#############################################################################################
 nano /etc/crontab
 
 #MINT
 */3 * * * * root ironfish wallet:mint -a 100000 -f $IRONFISH_WALLET -m $IRONFISH_WALLET -n $IRONFISH_WALLET -o 1
 
 #BURN
+ironfish wallet:balances
+ironfish wallet:burn -a 1 -f Graffity -o 1 -i XXX
 ironfish wallet:burn -a 500 -f default -o 0.1 -i asset_id
 
 #SEND
