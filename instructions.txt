@@ -7,7 +7,7 @@ ironfish wallet:import $HOME/.ironfish/keys/$IRONFISH_WALLET.json
 systemctl restart ironfishd ironfishd-miner.service
 systemctl stop ironfishd-miner
 systemctl disable ironfishd-miner
-
+ironfish status -f
 #############################################################################################
 nano /etc/crontab
 
