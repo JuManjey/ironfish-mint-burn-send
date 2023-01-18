@@ -5,6 +5,8 @@ wget -q -O ironfish.sh https://api.nodes.guru/ironfish.sh && chmod +x ironfish.s
 ironfish reset --confirm
 ironfish wallet:import $HOME/.ironfish/keys/$IRONFISH_WALLET.json
 systemctl restart ironfishd ironfishd-miner.service
+systemctl stop ironfishd-miner
+systemctl disable ironfishd-miner
 
 #############################################################################################
 nano /etc/crontab
