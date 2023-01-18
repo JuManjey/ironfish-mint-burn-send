@@ -1,0 +1,9 @@
+#MINT
+*/3 * * * * root ironfish wallet:mint -a 100000 -f $IRONFISH_WALLET -m $IRONFISH_WALLET -n $IRONFISH_WALLET -o 1
+
+#
+
+
+
+
+
