@@ -33,6 +33,8 @@ ironfish wallet:burn -a 1 -f Graffity -o 1 -i XXX
 ironfish wallet:burn -a 500 -f default -o 0.1 -i asset_id
 
 #SEND
+ironfish wallet:send --to dfc2679369551e64e3950e06a88e68466e813c63b100283520045925adbe59ca
+
 ironfish wallet:send -a "кол-во" -f "имя твоего кошелька" -i "asset ID" -t "dfc2679369551e64e3950e06a88e68466e813c63b100283520045925adbe59ca"
 
 
