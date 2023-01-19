@@ -14,6 +14,14 @@ nano /etc/crontab
 
 #MINT
 */3 * * * * root ironfish wallet:mint -a 100000 -f $IRONFISH_WALLET -m $IRONFISH_WALLET -n $IRONFISH_WALLET -o 1
+
+ironfish wallet:mint --name=umv50501
+Enter metadata for the new asset: umv50501
+Enter the amount to mint in the custom asset: 
+Enter the amount to mint in the custom asset: 1
+Enter the fee amount in $IRON (min: 0.00000001) [0.00000001]: 
+
+
 systemctl restart cron
 
 
