@@ -21,14 +21,12 @@ Enter the amount to mint in the custom asset:
 Enter the amount to mint in the custom asset: 1
 Enter the fee amount in $IRON (min: 0.00000001) [0.00000001]: 
 
-
-systemctl restart cron
-
-
-
-
-
 #BURN
+ironfish wallet:balances
+Enter the amount to burn in the custom asset: 0.00000001
+Enter the fee amount in $IRON (min: 0.00000001) [0.00000001]: 
+
+
 ironfish wallet:balances
 ironfish wallet:burn -a 1 -f Graffity -o 1 -i XXX
 ironfish wallet:burn -a 500 -f default -o 0.1 -i asset_id
