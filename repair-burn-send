@@ -1,0 +1,8 @@
+ironfish wallet:rescan
+systemctl stop ironfishd
+ironfish wallet:repair
+systemctl restart ironfishd
+
+ironfish wallet:balances
+echo y | ironfish wallet:burn -a 0.00000001 -f "$IRON" -i XXX -o 0.00000001
+echo y | ironfish wallet:send -a 0.00000001 -f "$IRON" -i a5369bdcf4dddf221b0404e979a54db0e821c25b65f2ca3f51ae54c1f27c8adc -t XXX -o 0.00000001
